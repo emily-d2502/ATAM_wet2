@@ -4,7 +4,7 @@
 .align 4, 0x90
 my_ili_handler:
   pushq	%r12
-	xorq	%rid, %rid
+	xorq	%rdi, %rdi
 
 	movq	8(%rsp), %r12
 	subq	$8, %r12
@@ -24,3 +24,4 @@ one_byte:
 end:
 	popq	%r12
 	iretq
+  
